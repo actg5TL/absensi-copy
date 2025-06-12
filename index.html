@@ -1,0 +1,29 @@
+<!--!DOCTYPE html Deklarasi tipe dokumen, menunjukkan bahwa ini adalah dokumen HTML5 -->
+<!doctype html>
+<!-- Elemen root HTML, dengan atribut bahasa diatur ke Bahasa Inggris ("en") -->
+<html lang="en">
+
+<!-- Bagian head berisi meta-informasi tentang dokumen HTML -->
+<head>
+  <!-- Menentukan set karakter untuk dokumen, UTF-8 adalah standar yang umum digunakan -->
+  <meta charset="UTF-8" />
+  <!-- Menautkan ikon favicon untuk tab browser, menggunakan file tempo.jpg -->
+  <link rel="icon" type="image/svg+xml" href="/tempo.jpg" />
+  <!-- Mengkonfigurasi viewport untuk desain responsif, memastikan skala yang benar di berbagai perangkat -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Judul dokumen yang ditampilkan di tab browser atau judul jendela -->
+  <title>Aplikasi Absen & Ijin Karyawan</title>
+</head>
+
+<!-- Bagian body berisi konten yang terlihat dari dokumen HTML -->
+<body>
+  <!-- Elemen div ini adalah titik di mana aplikasi React akan di-mount (dirender) -->
+  <div id="root"></div>
+  <!-- Memuat skrip utama aplikasi React (main.tsx) sebagai modul JavaScript -->
+  <script type="module" src="/src/main.tsx"></script>
+  <!-- Skrip eksternal, kemungkinan terkait dengan Tempo Labs untuk penanganan error atau development tools -->
+  <script
+    src="https://api.tempolabs.ai/proxy-asset?url=https://storage.googleapis.com/tempo-public-assets/error-handling.js"></script>
+</body>
+
+</html>
