@@ -1,0 +1,242 @@
+{
+  "dashboard": {
+    "welcome": "Selamat datang kembali, {{name}}",
+    "recordAttendance": "Catat Kehadiran",
+    "recordAttendanceDesc": "Check-in atau check-out dengan verifikasi lokasi",
+    "requestLeave": "Ajukan Izin/Cuti",
+    "requestLeaveDesc": "Kirim permintaan izin dengan persetujuan otomatis",
+    "newRequest": "Buat Pengajuan Baru",
+    "recentAttendance": "Aktivitas Terbaru",
+    "leaveRequests": "Pengajuan Izin",
+    "noAttendanceRecords": "Belum ada catatan kehadiran",
+    "startByCheckingIn": "Mulai dengan melakukan check-in di atas",
+    "noLeaveRequests": "Belum ada pengajuan izin",
+    "submitFirstRequest": "Kirim pengajuan pertama Anda di atas",
+    "locationNotAvailable": "Lokasi tidak tersedia",
+    "checkInType": "Check In",
+    "checkOutType": "Check Out"
+  },
+  "buttons": {
+    "checkingIn": "Sedang Check In...",
+    "checkIn": "Check In",
+    "checkingOut": "Sedang Check Out...",
+    "checkOut": "Check Out",
+    "loading": "Memuat..."
+  },
+  "toasts": {
+    "loadDataErrorTitle": "Kesalahan",
+    "loadDataErrorDesc": "Gagal memuat data. Silakan coba lagi.",
+    "checkInSuccessTitle": "Check-in Berhasil",
+    "checkInSuccessDesc": "Kehadiran Anda telah dicatat.",
+    "checkInFailedTitle": "Check-in Gagal",
+    "checkInFailedDesc": "Gagal mencatat kehadiran. Silakan coba lagi.",
+    "checkOutSuccessTitle": "Check-out Berhasil",
+    "checkOutSuccessDesc": "Kepergian Anda telah dicatat.",
+    "checkOutFailedTitle": "Check-out Gagal",
+    "checkOutFailedDesc": "Gagal mencatat kepergian. Silakan coba lagi."
+  },
+  "profile": {
+    "headerTitle": "Profil",
+    "headerDescription": "Kelola informasi dan preferensi pribadi Anda",
+    "card": {
+      "placeholderName": "Nama Pengguna",
+      "placeholderPosition": "Posisi Pengguna"
+    },
+    "form": {
+      "title": "Ubah Profil",
+      "description": "Perbarui detail Anda di bawah ini. Klik simpan jika sudah selesai.",
+      "fullName": "Nama Lengkap",
+      "email": "Email",
+      "employeeId": "ID Karyawan",
+      "nik": "Nomor Induk Kependudukan (NIK)",
+      "phone": "Telepon",
+      "gender": "Jenis Kelamin",
+      "birthDate": "Tanggal Lahir",
+      "department": "Departemen",
+      "position": "Posisi",
+      "location": "Lokasi",
+      "language": "Bahasa",
+      "selectLanguage": "Pilih Bahasa",
+      "saving": "Menyimpan...",
+      "saveChanges": "Simpan Perubahan",
+        "emailDescription": "Email tidak dapat diubah di sini",
+        "employeeIdPlaceholder": "Masukkan 3-8 karakter (a-z, 0-9)",
+        "employeeIdDescription": "3-8 karakter, huruf kecil dan angka saja",
+        "nikPlaceholder": "Masukkan 16 digit NIK Anda",
+        "nikDescription": "Nomor Induk Kependudukan (hanya 16 digit)",
+        "phonePlaceholder": "Masukkan nomor telepon Anda",
+        "selectGender": "Pilih Jenis Kelamin"
+    },
+    "toast": {
+      "validationErrorTitle": "Kesalahan Validasi",
+      "validationErrorDesc": "{{field}} wajib diisi.",
+      "updateSuccessTitle": "Profil Diperbarui",
+      "updateSuccessDesc": "Profil Anda telah berhasil diperbarui.",
+      "updateFailedTitle": "Pembaruan Gagal",
+      "updateFailedDesc": "Gagal memperbarui profil. Silakan coba lagi."
+    }
+  },
+  "settings": {
+    "title": "Pengaturan",
+    "description": "Sesuaikan preferensi aplikasi dan pengaturan privasi Anda",
+    "saved": "Pengaturan Diperbarui",
+    "savedDescription": "Pengaturan Anda telah berhasil disimpan.",
+    "error": "Pembaruan Gagal",
+    "errorDescription": "Gagal memperbarui pengaturan. Silakan coba lagi.",
+    "deleteAccount": "Penghapusan Akun",
+    "deleteAccountDescription": "Silakan hubungi dukungan untuk menghapus akun Anda.",
+    "notifications": {
+      "title": "Notifikasi",
+      "description": "Kelola preferensi notifikasi Anda",
+      "push": {
+        "label": "Notifikasi Push",
+        "description": "Terima notifikasi di dalam aplikasi"
+      },
+      "email": {
+        "label": "Notifikasi Email",
+        "description": "Terima notifikasi melalui email"
+      }
+    },
+    "location": {
+      "title": "Pelacakan Lokasi",
+      "description": "Izinkan pelacakan lokasi untuk absensi"
+    },
+    "autoCheckout": {
+      "label": "Checkout Otomatis",
+      "description": "Checkout secara otomatis di akhir hari"
+    },
+    "changePassword": {
+      "title": "Ubah Kata Sandi",
+      "description": "Perbarui kata sandi akun Anda untuk keamanan yang lebih baik",
+      "currentPassword": "Kata Sandi Saat Ini",
+      "newPassword": "Kata Sandi Baru",
+      "passwordHint": "Kata sandi harus memiliki minimal 8 karakter.",
+      "confirmPassword": "Konfirmasi Kata Sandi Baru",
+      "updateButton": "Perbarui Kata Sandi"
+    },
+    "appearance": {
+      "title": "Tampilan",
+      "description": "Sesuaikan tampilan dan nuansa aplikasi",
+      "darkMode": {
+        "label": "Mode Gelap",
+        "description": "Beralih ke tema gelap"
+      },
+      "timezone": "Zona Waktu"
+    },
+    "department": {
+      "title": "Manajemen Departemen",
+      "description": "Kelola departemen yang tersedia untuk organisasi",
+      "addNew": "Tambah Departemen Baru",
+      "current": "Departemen Saat Ini"
+    },
+    "emailRecipients": {
+      "title": "Penerima Email",
+      "description": "Konfigurasikan siapa yang menerima notifikasi kehadiran dan cuti",
+      "attendance": {
+        "label": "Notifikasi Kehadiran"
+      },
+      "leave": {
+        "label": "Notifikasi Permintaan Cuti"
+      },
+      "maxEmails": "Maksimal 5 alamat email ({{count}}/{{max}} تعيينات)"
+    },
+    "smtp": {
+      "title": "Konfigurasi SMTP",
+      "description": "Konfigurasikan pengaturan server email untuk notifikasi",
+      "host": "Host SMTP",
+      "port": "Port",
+      "username": "Nama Pengguna",
+      "password": "Kata Sandi",
+      "passwordHint": "Gunakan kata sandi khusus aplikasi untuk Gmail",
+      "useSsl": "Gunakan SSL/TLS"
+    },
+    "save": {
+        "title": "Simpan Perubahan",
+        "description": "Jangan lupa untuk menyimpan pengaturan Anda"
+    },
+    "saving": "Menyimpan...",
+    "saveButton": "Simpan Pengaturan"
+  },
+  "leaveRequest": {
+    "page": {
+      "title": "Permintaan Cuti",
+      "description": "Kirim permintaan cuti baru dengan semua detail yang diperlukan"
+    },
+    "form": {
+      "title": "Detail Permintaan",
+      "description": "Isi formulir di bawah ini untuk mengajukan permintaan cuti Anda.",
+      "allFieldsRequired": "Semua kolom yang ditandai dengan * wajib diisi.",
+      "department": "Departemen",
+      "fetchingDepartment": "Mengambil departemen...",
+      "departmentAutoFilled": "✓ Departemen diisi otomatis dari profil Anda",
+      "departmentNotSetWarning": "Harap perbarui profil Anda untuk mengatur departemen Anda.",
+      "leaveType": "Jenis Cuti",
+      "selectLeaveType": "Pilih jenis cuti",
+      "reason": "Kategori Alasan",
+      "selectReason": "Pilih kategori alasan",
+      "startDate": "Tanggal Mulai",
+      "endDate": "Tanggal Selesai",
+      "pickDate": "Pilih tanggal",
+      "additionalDetails": "Detail Tambahan",
+      "additionalDetailsPlaceholder": "Berikan informasi tambahan tentang permintaan cuti Anda...",
+      "submitting": "Mengirim...",
+      "submitButton": "Kirim Permintaan Cuti"
+    },
+    "leaveTypes": {
+      "AnnualLeave": "Cuti Tahunan",
+      "SickLeave": "Cuti Sakit",
+      "PersonalLeave": "Cuti Pribadi",
+      "MaternityPaternityLeave": "Cuti Melahirkan/Paternal",
+      "EmergencyLeave": "Cuti Darurat",
+      "BereavementLeave": "Cuti Duka",
+      "StudyLeave": "Cuti Belajar"
+    },
+    "leaveReasons": {
+      "Vacation": "Liburan",
+      "Medicalappointment": "Janji medis",
+      "Familyemergency": "Keadaan darurat keluarga",
+      "Personalmatters": "Urusan pribadi",
+      "Wedding": "Pernikahan",
+      "Funeral": "Pemakaman",
+      "EducationTraining": "Pendidikan/Pelatihan",
+      "Other": "Lainnya"
+    },
+    "profile": {
+      "gender": "Jenis Kelamin",
+      "genderOptions": {
+        "male": "Pria",
+        "female": "Wanita"
+      },
+      "selectGender": "Pilih Jenis Kelamin",
+      "fullName": "Nama Lengkap",
+      "birthDate": "Tanggal Lahir",
+      "department": "Departemen",
+      "language": "Bahasa",
+      "position": "Posisi",
+      "location": "Lokasi"
+    },
+    "toasts": {
+      "missingInfo": {
+        "title": "Informasi Kurang",
+        "description": "Harap isi semua kolom yang wajib diisi."
+      },
+      "authError": {
+        "title": "Kesalahan Otentikasi",
+        "description": "Silakan masuk untuk mengajukan permintaan cuti."
+      },
+      "invalidDate": {
+        "title": "Rentang Tanggal Tidak Valid",
+        "description": "Tanggal selesai harus setelah tanggal mulai."
+      },
+      "submitSuccess": {
+        "title": "Permintaan Cuti Terkirim",
+        "description": "Permintaan cuti Anda telah berhasil dikirim dan menunggu persetujuan."
+      },
+      "submitFailed": {
+        "title": "Pengajuan Gagal",
+        "description": "Terjadi kesalahan saat mengirim permintaan Anda. Silakan coba lagi."
+      }
+    }
+  }
+}
+

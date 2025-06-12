@@ -1,0 +1,242 @@
+{
+  "dashboard": {
+    "welcome": "Welcome back, {{name}}",
+    "recordAttendance": "Record Attendance",
+    "recordAttendanceDesc": "Check in or out with location verification",
+    "requestLeave": "Request Leave",
+    "requestLeaveDesc": "Submit leave requests with automated approval",
+    "newRequest": "New Request",
+    "recentAttendance": "Recent Attendance",
+    "leaveRequests": "Leave Requests",
+    "noAttendanceRecords": "No attendance records yet",
+    "startByCheckingIn": "Start by checking in above",
+    "noLeaveRequests": "No leave requests yet",
+    "submitFirstRequest": "Submit your first request above",
+    "locationNotAvailable": "Location not available",
+    "checkInType": "Check In",
+    "checkOutType": "Check Out"
+  },
+  "buttons": {
+    "checkingIn": "Checking In...",
+    "checkIn": "Check In",
+    "checkingOut": "Checking Out...",
+    "checkOut": "Check Out",
+    "loading": "Loading..."
+  },
+  "toasts": {
+    "loadDataErrorTitle": "Error",
+    "loadDataErrorDesc": "Failed to load data. Please try again.",
+    "checkInSuccessTitle": "Check-in Successful",
+    "checkInSuccessDesc": "Your attendance has been recorded.",
+    "checkInFailedTitle": "Check-in Failed",
+    "checkInFailedDesc": "Failed to record attendance. Please try again.",
+    "checkOutSuccessTitle": "Check-out Successful",
+    "checkOutSuccessDesc": "Your departure has been recorded.",
+    "checkOutFailedTitle": "Check-out Failed",
+    "checkOutFailedDesc": "Failed to record departure. Please try again."
+  },
+  "profile": {
+    "headerTitle": "Profile",
+    "headerDescription": "Manage your personal information and preferences",
+    "card": {
+      "placeholderName": "User Name",
+      "placeholderPosition": "User Position"
+    },
+    "form": {
+      "title": "Edit Profile",
+      "description": "Update your details below. Click save when you're done.",
+      "fullName": "Full Name",
+      "email": "Email",
+      "employeeId": "Employee ID",
+      "nik": "National ID (NIK)",
+      "phone": "Phone",
+      "gender": "Gender",
+      "birthDate": "Birth Date",
+      "department": "Department",
+      "position": "Position",
+      "location": "Location",
+      "language": "Language",
+      "selectLanguage": "Select Language",
+      "saving": "Saving...",
+      "saveChanges": "Save Changes",
+        "emailDescription": "Email cannot be changed here",
+        "employeeIdPlaceholder": "Enter 3-8 characters (a-z, 0-9)",
+        "employeeIdDescription": "3-8 characters, lowercase letters and numbers only",
+        "nikPlaceholder": "Enter your 16-digit NIK",
+        "nikDescription": "National Identity Number (16 digits only)",
+        "phonePlaceholder": "Enter your phone number",
+        "selectGender": "Select Gender"
+    },
+    "toast": {
+      "validationErrorTitle": "Validation Error",
+      "validationErrorDesc": "{{field}} is required.",
+      "updateSuccessTitle": "Profile Updated",
+      "updateSuccessDesc": "Your profile has been successfully updated.",
+      "updateFailedTitle": "Update Failed",
+      "updateFailedDesc": "Failed to update profile. Please try again."
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "description": "Customize your app preferences and privacy settings",
+    "saved": "Settings Updated",
+    "savedDescription": "Your settings have been successfully saved.",
+    "error": "Update Failed",
+    "errorDescription": "Failed to update settings. Please try again.",
+    "deleteAccount": "Account Deletion",
+    "deleteAccountDescription": "Please contact support to delete your account.",
+    "notifications": {
+      "title": "Notifications",
+      "description": "Manage your notification preferences",
+      "push": {
+        "label": "Push Notifications",
+        "description": "Receive notifications in the app"
+      },
+      "email": {
+        "label": "Email Notifications",
+        "description": "Receive notifications via email"
+      }
+    },
+    "location": {
+      "title": "Location Tracking",
+      "description": "Allow location tracking for attendance"
+    },
+    "autoCheckout": {
+      "label": "Auto Checkout",
+      "description": "Automatically checkout at end of day"
+    },
+    "changePassword": {
+      "title": "Change Password",
+      "description": "Update your account password for better security",
+      "currentPassword": "Current Password",
+      "newPassword": "New Password",
+      "passwordHint": "Password must have at least 8 characters.",
+      "confirmPassword": "Confirm New Password",
+      "updateButton": "Update Password"
+    },
+    "appearance": {
+      "title": "Appearance",
+      "description": "Customize the look and feel of the application",
+      "darkMode": {
+        "label": "Dark Mode",
+        "description": "Switch to dark theme"
+      },
+      "timezone": "Timezone"
+    },
+    "department": {
+      "title": "Department Management",
+      "description": "Manage available departments for the organization",
+      "addNew": "Add New Department",
+      "current": "Current Departments"
+    },
+    "emailRecipients": {
+      "title": "Email Recipients",
+      "description": "Configure who receives attendance and leave notifications",
+      "attendance": {
+        "label": "Attendance Notifications"
+      },
+      "leave": {
+        "label": "Leave Request Notifications"
+      },
+      "maxEmails": "Maximum 5 email addresses ({{count}}/{{max}} تعيينات)"
+    },
+    "smtp": {
+      "title": "SMTP Configuration",
+      "description": "Configure email server settings for notifications",
+      "host": "SMTP Host",
+      "port": "Port",
+      "username": "Username",
+      "password": "Password",
+      "passwordHint": "Use app-specific password for Gmail",
+      "useSsl": "Use SSL/TLS"
+    },
+    "save": {
+        "title": "Save Changes",
+        "description": "Don't forget to save your settings"
+    },
+    "saving": "Saving...",
+    "saveButton": "Save Settings"
+  },
+  "leaveRequest": {
+    "page": {
+      "title": "Leave Request",
+      "description": "Submit a new leave request with all required details"
+    },
+    "form": {
+      "title": "Request Details",
+      "description": "Fill out the form below to submit your leave request.",
+      "allFieldsRequired": "All fields marked with * are required.",
+      "department": "Department",
+      "fetchingDepartment": "Fetching department...",
+      "departmentAutoFilled": "✓ Department auto-filled from your profile",
+      "departmentNotSetWarning": "Please update your profile to set your department.",
+      "leaveType": "Leave Type",
+      "selectLeaveType": "Select leave type",
+      "reason": "Reason Category",
+      "selectReason": "Select reason category",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "pickDate": "Pick a date",
+      "additionalDetails": "Additional Details",
+      "additionalDetailsPlaceholder": "Provide any additional information about your leave request...",
+      "submitting": "Submitting...",
+      "submitButton": "Submit Leave Request"
+    },
+    "leaveTypes": {
+      "AnnualLeave": "Annual Leave",
+      "SickLeave": "Sick Leave",
+      "PersonalLeave": "Personal Leave",
+      "MaternityPaternityLeave": "Maternity/Paternity Leave",
+      "EmergencyLeave": "Emergency Leave",
+      "BereavementLeave": "Bereavement Leave",
+      "StudyLeave": "Study Leave"
+    },
+    "leaveReasons": {
+      "Vacation": "Vacation",
+      "Medicalappointment": "Medical appointment",
+      "Familyemergency": "Family emergency",
+      "Personalmatters": "Personal matters",
+      "Wedding": "Wedding",
+      "Funeral": "Funeral",
+      "EducationTraining": "Education/Training",
+      "Other": "Other"
+    },
+    "profile": {
+      "gender": "Gender",
+      "genderOptions": {
+        "male": "Male",
+        "female": "Female"
+      },
+      "selectGender": "Select Gender",
+      "fullName": "Full Name",
+      "birthDate": "Birth Date",
+      "department": "Department",
+      "language": "Language",
+      "position": "Position",
+      "location": "Location"
+    },
+    "toasts": {
+      "missingInfo": {
+        "title": "Missing Information",
+        "description": "Please fill in all required fields."
+      },
+      "authError": {
+        "title": "Authentication Error",
+        "description": "Please log in to submit a leave request."
+      },
+      "invalidDate": {
+        "title": "Invalid Date Range",
+        "description": "End date must be after start date."
+      },
+      "submitSuccess": {
+        "title": "Leave Request Submitted",
+        "description": "Your leave request has been submitted successfully and is pending approval."
+      },
+      "submitFailed": {
+        "title": "Submission Failed",
+        "description": "There was an error submitting your request. Please try again."
+      }
+    }
+  }
+}
+

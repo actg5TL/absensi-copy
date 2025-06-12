@@ -1,0 +1,129 @@
+/**
+ * @file index.css
+ * @fileoverview Stylesheet global utama untuk aplikasi.
+ * @description File ini mengimpor direktif inti Tailwind CSS, mendefinisikan variabel
+ * CSS (token desain) untuk tema terang dan gelap, serta menerapkan gaya dasar global.
+ */
+
+/*
+ * --- DIREKTIF TAILWIND CSS ---
+ * Ini adalah titik masuk untuk Tailwind. Urutannya penting.
+ */
+
+/* 1. @tailwind base: Menyuntikkan gaya dasar Tailwind (seperti reset CSS Preflight) dan gaya dasar
+ *    yang dihasilkan dari konfigurasi tema Anda. */
+@tailwind base;
+
+/* 2. @tailwind components: Menyuntikkan kelas komponen Tailwind (misalnya, .container) dan
+ *    kelas komponen kustom yang terdaftar melalui plugin. */
+@tailwind components;
+
+/* 3. @tailwind utilities: Menyuntikkan kelas utilitas Tailwind (misalnya, .pt-4, .flex).
+ *    Ini harus terakhir agar dapat menimpa gaya dari 'base' dan 'components'. */
+@tailwind utilities;
+
+/*
+ * --- DEFINISI VARIABEL TEMA (DESIGN TOKENS) ---
+ * Menggunakan `@layer base` untuk memastikan variabel ini tersedia secara global
+ * dan dapat ditimpa oleh utilitas Tailwind jika diperlukan.
+ */
+@layer base {
+  /*
+   * :root mendefinisikan variabel untuk TEMA TERANG (LIGHT MODE) secara default.
+   * Variabel ini digunakan di seluruh konfigurasi Tailwind (tailwind.config.js)
+   * untuk memastikan konsistensi warna.
+   * Format warna menggunakan HSL (Hue, Saturation, Lightness) tanpa unit.
+   */
+  :root {
+    /* Warna Latar & Teks Utama */
+    --background: 0 0% 100%; /* putih */
+    --foreground: 222.2 84% 4.9%; /* hitam pekat */
+
+    /* Warna untuk Komponen seperti Card, Dialog, dll. */
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    /* Warna untuk Popover & Dropdown */
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    /* Warna Aksen Utama (Primary) - untuk tombol utama, link aktif, dll. */
+    --primary: 222.2 47.4% 11.2%; /* biru tua */
+    --primary-foreground: 210 40% 98%; /* teks putih di atas warna primary */
+
+    /* Warna Sekunder - untuk tombol sekunder, elemen pendukung. */
+    --secondary: 210 40% 96.1%; /* abu-abu muda */
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    /* Warna Redam (Muted) - untuk teks deskriptif, placeholder. */
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%; /* abu-abu gelap */
+
+    /* Warna Aksen Hover/Fokus */
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    /* Warna Destruktif - untuk tombol hapus, pesan error. */
+    --destructive: 0 84.2% 60.2%; /* merah */
+    --destructive-foreground: 210 40% 98%;
+
+    /* Warna untuk Garis & Input */
+    --border: 214.3 31.8% 91.4%; /* abu-abu border */
+    --input: 214.3 31.8% 91.4%; /* warna border input */
+    --ring: 222.2 84% 4.9%; /* warna outline saat fokus */
+
+    /* Radius Sudut (Border Radius) */
+    --radius: 0.5rem; /* 8px */
+  }
+
+  /*
+   * Mendefinisikan ulang variabel di atas untuk TEMA GELAP (DARK MODE).
+   * Tema ini aktif ketika elemen <html> atau elemen induk lainnya memiliki kelas `.dark`.
+   */
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+/*
+ * --- GAYA DASAR GLOBAL ---
+ * Menerapkan beberapa gaya dasar ke elemen fundamental.
+ */
+@layer base {
+  * {
+    /* Secara default, semua elemen akan menggunakan warna border yang didefinisikan di variabel --border. */
+    @apply border-border;
+  }
+
+  body {
+    /* Menerapkan warna latar belakang dan teks utama ke seluruh halaman. */
+    /* Ini memungkinkan tema terang/gelap bekerja secara otomatis. */
+    @apply bg-background text-foreground;
+  }
+}
